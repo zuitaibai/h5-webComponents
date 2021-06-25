@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<vj-select id="a" vj-name="sss" vj-init-value="8"><!-- vj-readonly --> <!-- vj-disabled -->
+    <param text="选项一" value="1">
+    <param text="选项二" value="2">
+    <param text="选项三" value="3">
+    <param text="选项四" value="4">
+</vj-select>
+
+<br><br><br><br><br><button type="button" id="try">go to try</button>
+
+
+<script type="module">
+import './ctrls/select.js';
+
+let dom = document.querySelector('#a');
+
+dom.addEventListener('change', function(e){
+    console.log(e);
+});
+
+document.querySelector('#try').addEventListener('click', function(){
+    // s.value = 3;
+    // dom.prePend(-1,'首加');
+    // dom.prePend([ [-1,'首加'], [-2,'首加'] ]);
+    // dom.append(-1,'尾加');
+    // dom.append([ [-1,'尾加'], [-2,'尾加'] ]);
+    // dom.rebuild(2,'选项');
+    // dom.rebuild([ [2,'选项'], [3,'选项'] ]);
+    // dom.remove();
+    // dom.remove(2);
+    // dom.remove([1,2]);
+    // dom.checkIndex(0);
+    // dom.checkIndex(0, true);
+    // dom.checkJust(1);
+    // dom.checkAutoTop();
+    // dom.trigger();
+    // dom.checkLable('选项三');
+    // dom.disabledItem(true, 1);
+    // dom.disabledItem(true, [2,3]);
+    // dom.disabled(true);
+    // dom.readOnly(true);
+    // console.log(dom.getDataList());
+    // console.log(dom.getLable());
+});
+</script>
+</body>
+</html>
